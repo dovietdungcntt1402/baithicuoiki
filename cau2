@@ -1,9 +1,13 @@
-def totalDigitsOfNumber(n):
-    total = 0;
+name = input("Nhập tên đệm của bạn:")
+print(name)
+
+def tongcacchuso(n):
+    tong = 0
     while (n > 0):
-        total = total + n % 10;
-        n = int(n / 10);
-    return total;
- 
-n = int(input("số nguyên dương n = "));
-print("Tổng các chữ số của", n , "bằng", totalDigitsOfNumber(n));
+        tong = tong + n % 10
+        n = int(n / 10)
+    return tong
+x = input("Nhập tên của bạn:")
+n=len(x)+len(name)
+print("n=",n)
+print("Tổng các chữ số của", n, "là", tongcacchuso(n))
